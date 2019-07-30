@@ -1,0 +1,55 @@
+.font-normal() {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.page-photo__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-photo__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.page-photo__description {
+  .font-normal();
+  text-transform: uppercase;
+}
+
+.page-photo__gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: 5px dotted red;
+}
+
+.gallery__item {
+  width: 280px;
+  margin-left: 20px;
+}
+
+.gallery__item figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  .font-normal();
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.gallery__author {
+  font-weight: normal;
+  text-transform: none;
+  color: #333333;
+}
