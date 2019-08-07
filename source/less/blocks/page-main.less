@@ -1,13 +1,8 @@
 .page-main__wrapper {
-  width: 280px;
+  width: 320px;
   padding: 0 20px;
   margin: 0 auto;
   outline: 5px dotted red;
-}
-
-.page-main__promo,
-.advantages-photo__image {
-  margin-left: -20px;
 }
 
 .page-main__item {
@@ -26,4 +21,30 @@
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__wrapper {
+    width: 768px;
+    padding: 0;
+  }
+
+  .page-main__background-image {
+    width: 100%;
+  }
+
+  .page-main__town-title {
+    .font-bold-table();
+  }
+
+  .page-main__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__wrapper {
+    width: 1200px;
+    padding: 0 40px;
+  }
 }

@@ -20,3 +20,24 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+  }
+
+  .site-list__item {
+    background-color: #ffffff;
+    border: none;
+  }
+
+  .site-list__item a {
+    color: #000000;
+  }
+}
