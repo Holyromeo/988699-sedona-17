@@ -1,5 +1,7 @@
 .advantages-other {
   margin: 0;
+  padding: 0;
+  padding-left: 20px;
   list-style: none;
   text-transform: uppercase;
   text-align: center;
@@ -9,6 +11,7 @@
 }
 
 .advantages-other__item {
+  width: 280px;
   padding-top: 30px;
   border-bottom: 1px solid #d6d6d6;
 }
@@ -20,4 +23,20 @@
 .advantages-other__paragraph {
   margin-bottom: 25px;
   .font-normal();
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-other {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .advantages-other__item {
+    width: 170px;
+  }
+
+  .advantages-other__title-town {
+    font-size: 21px;
+  }
 }

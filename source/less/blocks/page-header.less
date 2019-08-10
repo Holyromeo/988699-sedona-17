@@ -7,3 +7,26 @@
   margin: 0 auto;
   outline: 5px dotted red;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    width: 768px;
+  }
+
+  .page-header__logo-image {
+    position: absolute;
+    left: 374px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    width: 1200px;
+    padding: 0 40px;
+  }
+
+  .page-header__logo-image {
+    position: absolute;
+    left: 600px;
+  }
+}

@@ -19,3 +19,52 @@
 .gallery__figure {
   margin: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .page-photo__wrapper {
+    width: 768px;
+  }
+
+  .page-photo__background-image {
+    width: 100%;
+    height: 520px;
+  }
+
+  .gallery,
+  .page-photo__description {
+    width: 648px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .gallery__item {
+    width: 324px;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+
+  .gallery__item:first-child {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-photo__wrapper {
+    width: 1200px;
+  }
+
+  .gallery {
+    width: 1200px;
+  }
+
+  .gallery__item {
+    width: 400px;
+  }
+
+  .page-photo__description {
+    width: 440px;
+  }
+}
