@@ -24,6 +24,7 @@
   height: 4px;
   background-color: #81b3d2;
   box-shadow: 0 8px 0 0 #81b3d2, 0 17px 0 0 #81b3d2;
+
   &:hover,
   &:active {
     background-color: transparent;
@@ -34,6 +35,7 @@
   top: -222px;
   right: 7px;
   background-color: transparent;
+
   &::before,
   &::after {
     content: "";
@@ -44,13 +46,16 @@
     height: 5px;
     background-color: #ffffff;
   }
+
   &::before {
     transform: rotate(45deg);
     box-shadow: none;
   }
+
   &::after {
     transform: rotate(-45deg);
   }
+
   &:hover,
   &:active {
     color: #ffffff;
