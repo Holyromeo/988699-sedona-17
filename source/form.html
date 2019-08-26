@@ -27,7 +27,7 @@
           <div class="page-header__logo">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg" 1200w>
               <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="105" height="84" alt="Город Седона">
             </picture>
             <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -37,9 +37,9 @@
     </header>
     <main class="page-form">
       <div class="page-form__wrapper">
-        <section class="page-form__promo">
-          <img class="page-form__background-image" src="img/bg-back-mobile@1x.jpg" width="320" height="158" alt="Горы">
-        </section>
+        <div class="page-form__promo">
+          <div class="page-form__background-triangle"></div>
+        </div>
       </div>
     </main>
     <footer class="page-footer">
