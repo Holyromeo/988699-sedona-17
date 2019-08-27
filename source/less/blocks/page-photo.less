@@ -19,7 +19,7 @@
   position: absolute;
   top: -4px;
   left: 45px;
-  width: 90%;
+  width: 73%;
   height: 100%;
   background-image: url("../img/text-sedona.svg");
   background-repeat: no-repeat;
@@ -122,6 +122,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-photo {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .page-photo__video {
+    height: 720px;
+    margin: 0;
+  }
+
   .page-photo__promo {
     height: 300px;
     margin-bottom: 112px;
@@ -145,9 +155,5 @@
     width: 439px;
     margin-bottom: 71px;
     margin-left: 380px;
-  }
-
-  .page-photo__video {
-    height: 720px;
   }
 }

@@ -1,6 +1,5 @@
 .page-form__wrapper {
   width: 320px;
-  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -19,7 +18,7 @@
   position: absolute;
   top: -4px;
   left: 45px;
-  width: 90%;
+  width: 73%;
   height: 100%;
   background-image: url("../img/text-sedona.svg");
   background-repeat: no-repeat;
@@ -76,6 +75,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-form {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
   .page-form__wrapper {
     width: 1200px;
   }
