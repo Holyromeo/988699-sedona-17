@@ -41,6 +41,86 @@
           <div class="page-form__promo">
             <div class="page-form__background-triangle"></div>
           </div>
+          <h1 class="visually-hidden">Обратная связь</h1>
+          <div class="page-form__item">
+            <h2 class="page-form__title">Оставьте свой отзыв</h2>
+            <p class="page-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+          <section class="page-form__item feedback">
+            <h2 class="visually-hidden">Ваше сообщение</h2>
+            <div class="feedback-container">
+              <form class="feedback__item feedback-form" action="https://echo.htmlacademy.ru" method="post" id="write-us-form">
+                <h2 class="feedback__user-info">Представьтесь:</h2>
+                  <p class="feedback__item">
+                    <label class="feedback__item--name" for="user-name">Имя<sup>*</sup>:</label>
+                    <input id="user-name" type="text" name="user-name" placeholder="Петр">
+                  </p>
+                  <p class="feedback__item">
+                    <label class="feedback__item--surname" for="user-surname">Фамилия<sup>*</sup>:</label>
+                    <input id="user-surname" type="text" name="user-surname" placeholder="Иванов">
+                  </p>
+                  <p class="feedback__item">
+                    <label class="feedback__item--patronymic" for="user-patronymic">Отчество:</label>
+                    <input id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
+                  </p>
+                <h2 class="feedback__user-contacts">Контактная информация:</h2>
+                  <p class="feedback__item">
+                    <label class="feedback__item--phone" for="user-name">Контактый телефон<sup>*</sup>:</label>
+                    <input id="user-name" type="text" name="user-name" placeholder="Введите телефон">
+                  </p>
+                  <p class="feedback__item">
+                    <label class="feedback__item--e-mail" for="user-surname">Электронная почта<sup>*</sup>:</label>
+                    <input id="user-surname" type="text" name="user-surname" placeholder="Введите e-mail">
+                  </p>
+                <fieldset class="feedback__item fieldset">
+                  <legend class="fieldset__item">Ваше общее впечатление:</legend>
+                    <ul>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="type" value="rechargeable" id="filter-rechargeable" checked>
+                        <label for="filter-rechargeable">Скорее положительное</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="type" value="network" id="filter-network">
+                        <label for="filter-network">Скорее отрицательное</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="type" value="network" id="filter-network">
+                        <label for="filter-network">Затрудняюсь ответить</label>
+                      </li>
+                    </ul>
+                  <h3  class="fieldset__item">Посещенные достопримечательности:</h3>
+                    <ul>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                        <label for="filter-bosch">Мост Дьявола</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                        <label for="filter-interskol">Гора-Колокол</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                        <label for="filter-makita">Слайд-парк</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                        <label for="filter-dewalt">Красные скалы</label>
+                      </li>
+                    </ul>
+                </fieldset>
+                  <p class="feedback__item">
+                    <label class="feedback__item--e-mail" for="user-surname">Опишите свои эмоции:</label>
+                    <input id="user-surname" type="text" name="user-surname" placeholder="Опишите подробно все свои восторги">
+                  </p>
+                <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+              </form>
+            </div>
+            <div class="modal-write-us-button">
+              <div class="modal-container">
+                <button class="button button-write-us" type="submit" form="write-us-form">Отправить</button>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
       <footer class="wrapper-shadow__item page-footer">
