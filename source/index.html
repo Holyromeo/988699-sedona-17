@@ -105,7 +105,11 @@
           </div>
           <div class="page-main__item map">
             <a class="map contacts-button-map" href="https://yandex.ru/maps">
-              <img src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта штата Аризона">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+                <img src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта штата Аризона">
+              </picture>
             </a>
           </div>
         </div>

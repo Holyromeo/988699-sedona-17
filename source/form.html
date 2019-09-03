@@ -49,76 +49,78 @@
           <section class="page-form__item feedback">
             <h2 class="visually-hidden">Ваше сообщение</h2>
             <div class="feedback-container">
-              <form class="feedback__item feedback-form" action="https://echo.htmlacademy.ru" method="post" id="write-us-form">
-                <h2 class="feedback__user-info">Представьтесь:</h2>
-                  <p class="feedback__item">
-                    <label class="feedback__item--name" for="user-name">Имя<sup>*</sup>:</label>
+              <form class="feedback__item form" action="https://echo.htmlacademy.ru" method="post" id="feedback-form">
+                <div class="form__user-info">
+                  <h2>Представьтесь:</h2>
+                  <p class="form__item form__item--name">
+                    <label for="user-name">Имя<sup>*</sup>:</label>
                     <input id="user-name" type="text" name="user-name" placeholder="Петр">
                   </p>
-                  <p class="feedback__item">
-                    <label class="feedback__item--surname" for="user-surname">Фамилия<sup>*</sup>:</label>
+                  <p class="form__item form__item--surname">
+                    <label for="user-surname">Фамилия<sup>*</sup>:</label>
                     <input id="user-surname" type="text" name="user-surname" placeholder="Иванов">
                   </p>
-                  <p class="feedback__item">
-                    <label class="feedback__item--patronymic" for="user-patronymic">Отчество:</label>
+                  <p class="form__item form__item--patronymic">
+                    <label for="user-patronymic">Отчество:</label>
                     <input id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
                   </p>
-                <h2 class="feedback__user-contacts">Контактная информация:</h2>
-                  <p class="feedback__item">
-                    <label class="feedback__item--phone" for="user-name">Контактый телефон<sup>*</sup>:</label>
-                    <input id="user-name" type="text" name="user-name" placeholder="Введите телефон">
+                </div>
+                <div class="form__user-contacts">
+                  <h2>Контактная информация:</h2>
+                  <p class="form__item form__item--phone">
+                    <label for="user-phone"><span>Контактный</span> телефон<sup>*</sup>:</label>
+                    <input id="user-phone" type="text" name="user-phone" placeholder="Введите телефон">
                   </p>
-                  <p class="feedback__item">
-                    <label class="feedback__item--e-mail" for="user-surname">Электронная почта<sup>*</sup>:</label>
-                    <input id="user-surname" type="text" name="user-surname" placeholder="Введите e-mail">
+                  <p class="form__item form__item--e-mail">
+                    <label for="user-e-mail">Электронная почта<sup>*</sup>:</label>
+                    <input id="user-e-mail" type="text" name="user-e-mail" placeholder="Введите e-mail">
                   </p>
-                <fieldset class="feedback__item fieldset">
-                  <legend class="fieldset__item">Ваше общее впечатление:</legend>
-                    <ul>
-                      <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="type" value="rechargeable" id="filter-rechargeable" checked>
-                        <label for="filter-rechargeable">Скорее положительное</label>
+                </div>
+                <fieldset class="form__item fieldset fieldset--radio">
+                  <legend class="fieldset__legend">Ваше общее впечатление:</legend>
+                    <ul class="fieldset__list-radio">
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__radio" type="radio" name="type" value="positive" id="filter-positive" checked>
+                        <label for="filter-positive">Скорее положительное</label>
                       </li>
-                      <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="type" value="network" id="filter-network">
-                        <label for="filter-network">Скорее отрицательное</label>
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__radio" type="radio" name="type" value="negative" id="filter-negative">
+                        <label for="filter-negative">Скорее отрицательное</label>
                       </li>
-                      <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="type" value="network" id="filter-network">
-                        <label for="filter-network">Затрудняюсь ответить</label>
-                      </li>
-                    </ul>
-                  <h3  class="fieldset__item">Посещенные достопримечательности:</h3>
-                    <ul>
-                      <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
-                        <label for="filter-bosch">Мост Дьявола</label>
-                      </li>
-                      <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
-                        <label for="filter-interskol">Гора-Колокол</label>
-                      </li>
-                      <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
-                        <label for="filter-makita">Слайд-парк</label>
-                      </li>
-                      <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
-                        <label for="filter-dewalt">Красные скалы</label>
+                      <li class="fieldset__item">
+                        <input class="visually-hidden  fieldset__radio" type="radio" name="type" value="no-answer" id="filter-no-answer">
+                        <label for="filter-no-answer">Затрудняюсь ответить</label>
                       </li>
                     </ul>
                 </fieldset>
-                  <p class="feedback__item">
-                    <label class="feedback__item--e-mail" for="user-surname">Опишите свои эмоции:</label>
-                    <input id="user-surname" type="text" name="user-surname" placeholder="Опишите подробно все свои восторги">
-                  </p>
-                <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+                <fieldset class="form__item fieldset fieldset--checkbox">
+                  <legend class="fieldset__legend">Посещенные достопримечательности:</legend>
+                    <ul class="fieldset__list-checkbox">
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__checkbox" type="checkbox" name="bridge" id="filter-bridge" checked>
+                        <label for="filter-bridge">Мост Дьявола</label>
+                      </li>
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__checkbox" type="checkbox" name="mountain" id="filter-mountain" checked>
+                        <label for="filter-mountain">Гора-Колокол</label>
+                      </li>
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__checkbox" type="checkbox" name="park" id="filter-park" checked>
+                        <label for="filter-park">Слайд-парк</label>
+                      </li>
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__checkbox" type="checkbox" name="rock" id="filter-rock">
+                        <label for="filter-rock">Красные скалы</label>
+                      </li>
+                    </ul>
+                </fieldset>
+                <div class="form__feedback">
+                  <p class="form__emotions">Опишите свои эмоции:</p>
+                  <p class="form__textarea"><textarea placeholder="Опишите подробно все свои восторги"></textarea></p>
+                  <p class="form__button"><input type="submit" value="Отправить отзыв"></p>
+                  <p class="form__clarification">  Обязательные поля</p>
+                </div>
               </form>
-            </div>
-            <div class="modal-write-us-button">
-              <div class="modal-container">
-                <button class="button button-write-us" type="submit" form="write-us-form">Отправить</button>
-              </div>
             </div>
           </section>
         </div>
