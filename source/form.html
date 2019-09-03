@@ -41,6 +41,88 @@
           <div class="page-form__promo">
             <div class="page-form__background-triangle"></div>
           </div>
+          <h1 class="visually-hidden">Обратная связь</h1>
+          <div class="page-form__item">
+            <h2 class="page-form__title">Оставьте свой отзыв</h2>
+            <p class="page-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+          <section class="page-form__item feedback">
+            <h2 class="visually-hidden">Ваше сообщение</h2>
+            <div class="feedback-container">
+              <form class="feedback__item form" action="https://echo.htmlacademy.ru" method="post" id="feedback-form">
+                <div class="form__user-info">
+                  <h2>Представьтесь:</h2>
+                  <p class="form__item form__item--name">
+                    <label for="user-name">Имя<sup>*</sup>:</label>
+                    <input id="user-name" type="text" name="user-name" placeholder="Петр">
+                  </p>
+                  <p class="form__item form__item--surname">
+                    <label for="user-surname">Фамилия<sup>*</sup>:</label>
+                    <input id="user-surname" type="text" name="user-surname" placeholder="Иванов">
+                  </p>
+                  <p class="form__item form__item--patronymic">
+                    <label for="user-patronymic">Отчество:</label>
+                    <input id="user-patronymic" type="text" name="user-patronymic" placeholder="Александрович">
+                  </p>
+                </div>
+                <div class="form__user-contacts">
+                  <h2>Контактная информация:</h2>
+                  <p class="form__item form__item--phone">
+                    <label for="user-phone"><span>Контактный</span> телефон<sup>*</sup>:</label>
+                    <input id="user-phone" type="text" name="user-phone" placeholder="Введите телефон">
+                  </p>
+                  <p class="form__item form__item--e-mail">
+                    <label for="user-e-mail">Электронная почта<sup>*</sup>:</label>
+                    <input id="user-e-mail" type="text" name="user-e-mail" placeholder="Введите e-mail">
+                  </p>
+                </div>
+                <fieldset class="form__item fieldset fieldset--radio">
+                  <legend class="fieldset__legend">Ваше общее впечатление:</legend>
+                    <ul class="fieldset__list-radio">
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__radio" type="radio" name="type" value="positive" id="filter-positive" checked>
+                        <label for="filter-positive">Скорее положительное</label>
+                      </li>
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__radio" type="radio" name="type" value="negative" id="filter-negative">
+                        <label for="filter-negative">Скорее отрицательное</label>
+                      </li>
+                      <li class="fieldset__item">
+                        <input class="visually-hidden  fieldset__radio" type="radio" name="type" value="no-answer" id="filter-no-answer">
+                        <label for="filter-no-answer">Затрудняюсь ответить</label>
+                      </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__item fieldset fieldset--checkbox">
+                  <legend class="fieldset__legend">Посещенные достопримечательности:</legend>
+                    <ul class="fieldset__list-checkbox">
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__checkbox" type="checkbox" name="bridge" id="filter-bridge" checked>
+                        <label for="filter-bridge">Мост Дьявола</label>
+                      </li>
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__checkbox" type="checkbox" name="mountain" id="filter-mountain" checked>
+                        <label for="filter-mountain">Гора-Колокол</label>
+                      </li>
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__checkbox" type="checkbox" name="park" id="filter-park" checked>
+                        <label for="filter-park">Слайд-парк</label>
+                      </li>
+                      <li class="fieldset__item">
+                        <input class="visually-hidden fieldset__checkbox" type="checkbox" name="rock" id="filter-rock">
+                        <label for="filter-rock">Красные скалы</label>
+                      </li>
+                    </ul>
+                </fieldset>
+                <div class="form__feedback">
+                  <p class="form__emotions">Опишите свои эмоции:</p>
+                  <p class="form__textarea"><textarea placeholder="Опишите подробно все свои восторги"></textarea></p>
+                  <p class="form__button"><input type="submit" value="Отправить отзыв"></p>
+                  <p class="form__clarification">  Обязательные поля</p>
+                </div>
+              </form>
+            </div>
+          </section>
         </div>
       </main>
       <footer class="wrapper-shadow__item page-footer">
@@ -85,6 +167,10 @@
           </div>
         </div>
       </footer>
+      <div class="popup-failure">
+      </div>
+      <div class="popup-succes">
+      </div>
     </div>
     <script src="js/script.js"></script>
   </body>

@@ -35,6 +35,33 @@
   background-repeat: no-repeat;
 }
 
+.page-form__item {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 3px;
+}
+
+.page-form__title {
+  margin-bottom: 27px;
+  .font-bold();
+}
+
+.page-form__description {
+  .font-normal-photo();
+}
+
+.page-form label {
+  .font-normal-form();
+}
+
+.page-form input {
+  .font-bold();
+  background-color: #f2f2f2;
+  border: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-form__wrapper {
     width: 768px;
@@ -43,7 +70,7 @@
 
   .page-form__promo {
     height: 290px;
-    margin-bottom: 75px;
+    margin-bottom: 73px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position-y: -228px;
@@ -72,9 +99,33 @@
     bottom: 0;
     background-image: url("../img/bg-intro-triangle-tablet.svg");
   }
+
+  .page-form__item {
+    border: 0;
+  }
+
+  .page-form__title {
+    margin-bottom: 32px;
+    font-size: 30px;
+    line-height: 26px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+  }
+
+  .page-form__description {
+    width: 445px;
+    margin-bottom: 54px;
+    margin-left: 161px;
+    letter-spacing: 0.1px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .page-form {
+    background-color: #ffffff;
+  }
+
   .page-form__wrapper {
     width: 1200px;
   }
@@ -96,5 +147,10 @@
     height: 70px;
     bottom: -13px;
     background-image: url("../img/bg-intro-triangle-desktop.svg");
+  }
+
+  .page-form__description {
+    margin-left: 376px;
+    margin-bottom: 38px;
   }
 }

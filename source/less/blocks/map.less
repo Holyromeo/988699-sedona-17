@@ -1,6 +1,26 @@
+.map picture {
+  position: relative;
+}
+
+.map picture::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  top: -171px;
+  left: calc(50% - 16px);
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 @media (min-width: @tablet-width) {
   .map img {
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .map picture::after {
+    top: -165px;
   }
 }
