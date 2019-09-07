@@ -48,7 +48,12 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/**/*.svg")
+  return gulp.src([
+    "source/img/**/htmlacademy.svg",
+    "source/img/**/icon-twitter.svg",
+    "source/img/**/icon-facebook.svg",
+    "source/img/**/icon-youtube.svg",
+    ])
     .pipe(svgstore({
       inlineSvg: true
     }))
