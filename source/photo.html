@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymus">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymus">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -29,11 +31,13 @@
               </li>
             </ul>
             <div class="page-header__logo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg" 1200w="">
-                <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="105" height="84" alt="Город Седона">
-              </picture>
+              <a href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="105" height="84" alt="Город Седона">
+                </picture>
+              </a>
               <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             </div>
           </nav>
@@ -60,7 +64,7 @@
                   </picture>
                 </p>
                 <div class="gallery__description-position">
-                  <figcaption class="gallery__description">Народные просторы</figcaption>
+                  <div class="gallery__description">Народные просторы</div>
                   <p class="gallery__author">Автор фото: Борис</p>
                   <p class="gallery__like">1350</p>
                 </div>
@@ -79,7 +83,7 @@
                   </picture>
                 </p>
                 <div class="gallery__description-position">
-                  <figcaption class="gallery__description">Местная растительность</figcaption>
+                  <div class="gallery__description">Местная растительность</div>
                   <p class="gallery__author">Автор фото: Сергей</p>
                   <p class="gallery__like">143</p>
                 </div>
@@ -98,7 +102,7 @@
                   </picture>
                 </p>
                 <div class="gallery__description-position">
-                  <figcaption class="gallery__description">Дорога на север</figcaption>
+                  <div class="gallery__description">Дорога на север</div>
                   <p class="gallery__author">Автор фото: Петр</p>
                   <p class="gallery__like">96</p>
                 <div>
@@ -117,7 +121,7 @@
                   </picture>
                 </p>
                 <div class="gallery__description-position">
-                  <figcaption class="gallery__description">Мост дьявола</figcaption>
+                  <div class="gallery__description">Мост дьявола</div>
                   <p class="gallery__author">Автор фото: Антон</p>
                   <p class="gallery__like">254</p>
                 </div>
@@ -134,21 +138,21 @@
             <ul class="social__list">
               <li class="social__item social__item--twitter">
                 <a class="social__link" href="https://twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твиттере</span>
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                     <use xlink:href="#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item social__item--facebook">
                 <a class="social__link" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span>
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                  <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
                     <use xlink:href="#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item social__item--youtube">
                 <a class="social__link" href="#"><span class="visually-hidden">Мы в Ю-Тюбе</span>
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                  <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
                     <use xlink:href="#icon-youtube"></use>
                   </svg>
                 </a>
